@@ -1,0 +1,24 @@
+.img2{
+    display: none;
+}
+.card:hover .img2{
+    display: block !important;
+}
+.card:hover .img1{
+    display: none ;
+}
+.card-p{
+    font-size: 14px;
+}
+.card-p1{
+    font-size: 12px;
+    color: #1c1d1d;
+}
+.card h6{
+    color: #7b7777;
+    font-size: 13px;
+}
+.card button{
+    font-size: 13px;
+    padding: 10px 0px;
+}

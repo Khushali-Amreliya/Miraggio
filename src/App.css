@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+:root{
+    --font1:"Montserrat", sans-serif;
+}
+.cart-subtotal h6{
+    font-weight: bolder;
+    font-size: 22px;
+}
+.cart-subtotal span{
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+}
+.cart-btn{
+    background-color: #000;
+    border: none;
+    border-radius: 5px 5px;
+    padding: 5px 10px;
+}
+.cart-btn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.paytm-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px 5px;
+    font-weight: bold;
+}
