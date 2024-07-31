@@ -88,30 +88,65 @@ import product_18_02 from '../fakedata/images/handbags6_02.webp'
 import product_18_03 from '../fakedata/images/handbags6_03.webp'
 import product_18_04 from '../fakedata/images/handbags6_04.webp'
 
-// import product_19_01 from '../fakedata/images/tote3.webp'
-// import product_19_02 from '../fakedata/images/tote3_01.webp'
-// import product_19_03 from '../fakedata/images/tote3_02.webp'
-// import product_19_04 from '../fakedata/images/tote3_03.webp'
+import product_19_01 from '../fakedata/images/collection1_01.webp'
+import product_19_02 from '../fakedata/images/collection1_02.webp'
+import product_19_03 from '../fakedata/images/collection1_03.webp'
+import product_19_04 from '../fakedata/images/collection1_04.webp'
 
-// import product_20_01 from '../fakedata/images/tote3.webp'
-// import product_20_02 from '../fakedata/images/tote3_01.webp'
-// import product_20_03 from '../fakedata/images/tote3_02.webp'
-// import product_20_04 from '../fakedata/images/tote3_03.webp'
+import product_20_01 from '../fakedata/images/handbags1.webp'
+import product_20_02 from '../fakedata/images/handbags2.webp'
+import product_20_03 from '../fakedata/images/handbags3.webp'
+import product_20_04 from '../fakedata/images/handbags4.webp'
 
-// import product_21_01 from '../fakedata/images/tote3.webp'
-// import product_21_02 from '../fakedata/images/tote3_01.webp'
-// import product_21_03 from '../fakedata/images/tote3_02.webp'
-// import product_21_04 from '../fakedata/images/tote3_03.webp'
+import product_21_01 from '../fakedata/images/collection2_01.webp'
+import product_21_02 from '../fakedata/images/collection2_02.webp'
+import product_21_03 from '../fakedata/images/collection2_03.webp'
+import product_21_04 from '../fakedata/images/collection2_04.webp'
 
-// import product_22_01 from '../fakedata/images/tote3.webp'
-// import product_22_02 from '../fakedata/images/tote3_01.webp'
-// import product_22_03 from '../fakedata/images/tote3_02.webp'
-// import product_22_04 from '../fakedata/images/tote3_03.webp'
+import product_22_01 from '../fakedata/images/collection3_01.webp'
+import product_22_02 from '../fakedata/images/collection3_02.webp'
+import product_22_03 from '../fakedata/images/collection3_03.webp'
+import product_22_04 from '../fakedata/images/collection3_04.webp'
 
-// import product_23_01 from '../fakedata/images/tote3.webp'
-// import product_23_02 from '../fakedata/images/tote3_01.webp'
-// import product_23_03 from '../fakedata/images/tote3_02.webp'
-// import product_23_04 from '../fakedata/images/tote3_03.webp'
+import product_23_01 from '../fakedata/images/collection4_01.webp'
+import product_23_02 from '../fakedata/images/collection4_02.webp'
+import product_23_03 from '../fakedata/images/collection4_03.webp'
+import product_23_04 from '../fakedata/images/collection4_04.webp'
+
+import product_24_01 from '../fakedata/images/collection5_01.webp'
+import product_24_02 from '../fakedata/images/collection5_02.webp'
+import product_24_03 from '../fakedata/images/collection5_03.webp'
+import product_24_04 from '../fakedata/images/collection5_04.webp'
+
+import product_25_01 from '../fakedata/images/collection6_01.webp'
+import product_25_02 from '../fakedata/images/collection6_02.webp'
+import product_25_03 from '../fakedata/images/collection6_03.webp'
+import product_25_04 from '../fakedata/images/collection6_04.webp'
+
+import product_26_01 from '../fakedata/images/collection7_01.webp'
+import product_26_02 from '../fakedata/images/collection7_02.webp'
+import product_26_03 from '../fakedata/images/collection7_03.webp'
+import product_26_04 from '../fakedata/images/collection7_04.webp'
+
+import product_27_01 from '../fakedata/images/collection8_01.webp'
+import product_27_02 from '../fakedata/images/collection8_02.webp'
+import product_27_03 from '../fakedata/images/collection8_03.webp'
+import product_27_04 from '../fakedata/images/collection8_04.webp'
+
+import product_28_01 from '../fakedata/images/collection9_01.webp'
+import product_28_02 from '../fakedata/images/collection9_02.webp'
+import product_28_03 from '../fakedata/images/collection9_03.webp'
+import product_28_04 from '../fakedata/images/collection9_04.webp'
+
+import product_29_01 from '../fakedata/images/collection11_01.webp'
+import product_29_02 from '../fakedata/images/collection11_02.webp'
+import product_29_03 from '../fakedata/images/collection11_03.webp'
+import product_29_04 from '../fakedata/images/collection11_04.webp'
+
+import product_30_01 from '../fakedata/images/collection10_01.webp'
+import product_30_02 from '../fakedata/images/collection10_02.webp'
+import product_30_03 from '../fakedata/images/collection10_03.webp'
+import product_30_04 from '../fakedata/images/collection10_04.webp'
 
 const products = [
     {
@@ -330,7 +365,150 @@ const products = [
         "image02": product_18_02,
         "image03": product_18_03,
         "image04": product_18_04
+    },
+    {
+        "id": "19",
+        "title": "Harbour Crossbody Bag",
+        "price": 1899,
+        "delprice": 2299,
+        "buyprice": 1599,
+        "category": "Collection_bag",
+        "image01": product_19_01,
+        "image02": product_19_02,
+        "image03": product_19_03,
+        "image04": product_19_04
+    },
+    {
+        "id": "20",
+        "title": "Kris Tote Bag",
+        "price": 2999,
+        "delprice": 3499,
+        "buyprice": 2799,
+        "category": "Collection_bag",
+        "image01": product_20_01,
+        "image02": product_20_02,
+        "image03": product_20_03,
+        "image04": product_20_04
+    },
+    {
+        "id": "21",
+        "title": "Emma Shoulder Bag",
+        "price": 1699,
+        "delprice": 1999,
+        "buyprice": 1499,
+        "category": "Collection_bag",
+        "image01": product_21_01,
+        "image02": product_21_02,
+        "image03": product_21_03,
+        "image04": product_21_04
+    },
+    {
+        "id": "22",
+        "title": "Ivy Backpack",
+        "price": 2399,
+        "delprice": 2799,
+        "buyprice": 2199,
+        "category": "Collection_bag",
+        "image01": product_22_01,
+        "image02": product_22_02,
+        "image03": product_22_03,
+        "image04": product_22_04
+    },
+    {
+        "id": "23",
+        "title": "Emma Shoulder Bag",
+        "price": 2599,
+        "delprice": 2999,
+        "buyprice": 2399,
+        "category": "Collection_bag",
+        "image01": product_23_01,
+        "image02": product_23_02,
+        "image03": product_23_03,
+        "image04": product_23_04
+    },
+    {
+        "id": "24",
+        "title": "Ivy Backpack",
+        "price": 3499,
+        "delprice": 3899,
+        "buyprice": 3299,
+        "category": "Collection_bag",
+        "image01": product_24_01,
+        "image02": product_24_02,
+        "image03": product_24_03,
+        "image04": product_24_04
+    },
+    {
+        "id": "25",
+        "title": "Harbour Crossbody Bag",
+        "price": 1999,
+        "delprice": 2399,
+        "buyprice": 1799,
+        "category": "Collection_bag",
+        "image01": product_25_01,
+        "image02": product_25_02,
+        "image03": product_25_03,
+        "image04": product_25_04
+    },
+    {
+        "id": "26",
+        "title": "Emma Shoulder Bag",
+        "price": 1799,
+        "delprice": 2099,
+        "buyprice": 1599,
+        "category": "Collection_bag",
+        "image01": product_26_01,
+        "image02": product_26_02,
+        "image03": product_26_03,
+        "image04": product_26_04
+    },
+    {
+        "id": "27",
+        "title": "Harbour Crossbody Bag",
+        "price": 2199,
+        "delprice": 2599,
+        "buyprice": 1999,
+        "category": "Collection_bag",
+        "image01": product_27_01,
+        "image02": product_27_02,
+        "image03": product_27_03,
+        "image04": product_27_04
+    },
+    {
+        "id": "28",
+        "title": "Kris Tote Bag",
+        "price": 2099,
+        "delprice": 2599,
+        "buyprice": 1799,
+        "category": "Collection_bag",
+        "image01": product_28_01,
+        "image02": product_28_02,
+        "image03": product_28_03,
+        "image04": product_28_04
+    },
+    {
+        "id": "29",
+        "title": "Kris Tote Bag",
+        "price": 2099,
+        "delprice": 2599,
+        "buyprice": 1799,
+        "category": "Collection_bag",
+        "image01": product_29_01,
+        "image02": product_29_02,
+        "image03": product_29_03,
+        "image04": product_29_04
+    },
+    {
+        "id": "30",
+        "title": "Keya Hobo Bag",
+        "price": 1899,
+        "delprice": 2299,
+        "buyprice": 1599,
+        "category": "Collection_bag",
+        "image01": product_30_01,
+        "image02": product_30_02,
+        "image03": product_30_03,
+        "image04": product_30_04
     }
-       
 ]
 export default products

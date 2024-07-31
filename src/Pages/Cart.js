@@ -17,7 +17,7 @@ const Cart = () => {
     return (
         <Helmet title="Cart">
             <div>
-                <section className='container my-5 pt-3'>
+                <section className='container pt-3'>
                     <div className='row'>
                         <div className='col-lg-12'>
                             {

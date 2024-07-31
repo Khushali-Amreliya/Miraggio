@@ -4,7 +4,7 @@ import Helmet from '../Components/Helmet'
 function Editorial() {
   return (
     <Helmet title="Editorial">
-      <div>Editorial</div>
+      <div>Contact</div>
     </Helmet>
   )
 }

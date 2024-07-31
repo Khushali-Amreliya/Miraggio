@@ -2,15 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { cartAction } from '../Store/Slice/CartSlice'
 import { useDispatch } from 'react-redux'
+import axios from 'axios'
 
 function ProductCard(props) {
   const { id, title, price, image01, image02, delprice, buyprice } = props.Productsitem
 
   const dispatch = useDispatch()
-  const addToCart = () => {
+  const addToCart = async() => {
     dispatch(cartAction.addItem({
       id, title, price, image01
     }))
+    await axios.post(`http://localhost:5000/api/cart`,{
+      id, title, price, image01,image02
+    }).then((res) => { console.log(res);
+      // setProducts(res.data)
+     }).catch((err) => console.log(err))
   }
   return (
     <div>
@@ -39,4 +45,4 @@ function ProductCard(props) {
   )
 }
 
-export default ProductCard
+export default ProductCard  

@@ -1,0 +1,19 @@
+
+[
+    {
+        "id":"01",
+        "title":"Camilla Denim Mini Bag",
+        "price":1999,
+        "delprice":2499,
+        "buyprice":1709,
+        "category":"MiniBag"
+    },
+    {
+        "id": "02",
+        "title": "Avery Leather Crossbody Bag",
+        "price": 2599,
+        "delprice": 3199,
+        "buyprice": 2219,
+        "category": "CrossbodyBag"
+    }
+]

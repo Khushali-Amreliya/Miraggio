@@ -1,0 +1,15 @@
+.collapse-btn{
+    letter-spacing: .3em;
+    font-size: .8rem !important ;
+    padding: 15px 10px 15px 0 !important;
+}
+@media(max-width:992px){
+    .menu_width{
+        width: 100% !important;
+    }
+}
+@media(max-width:768px){
+    .menu_width{
+        width: 100% !important;
+    }
+}

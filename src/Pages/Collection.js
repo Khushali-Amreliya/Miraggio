@@ -1,12 +1,113 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Helmet from '../Components/Helmet'
+import Sliders from '../Slider/Slider'
+import products from '../fakedata/Products';
+import ProductCard from '../Category/ProductCard';
 
 function Collection() {
+  const [category] = useState("COLLECTION");
+  const [sortOption, setSortOption] = useState('default');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [allProduct, setAllProduct] = useState([]);
+
+  useEffect(() => {
+    if (category === "COLLECTION") {
+      const FilterProduct = products.filter(item => item.category === "Collection_bag");
+      setAllProduct(FilterProduct);
+    }
+  }, [category]);
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredProducts = allProduct.filter(item =>
+    item.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const sortedProducts = filteredProducts.sort((a, b) => {
+    switch (sortOption) {
+      case '1':
+        return a.title.localeCompare(b.title);
+      case '2':
+        return b.title.localeCompare(a.title);
+      case '3':
+        return b.price - a.price;
+      case '4':
+        return a.price - b.price;
+      default:
+        return 0;
+    }
+  });
   return (
-    <Helmet title="Love Collection 2024">
+    <Helmet title="Featured Connections">
       <>
         <section className='container-fluid m-0 p-0'>
-          <img alt='' src='assets/img/Denim-Home_page_Banner_f20f4332-6734-4c08-92d2-15eefa5280c0.jpg' className='img-fluid'></img>
+          <img alt='' src='assets/img/Apricore-Collection-Bagpack-mobile.webp' className='img-fluid'></img>
+        </section>
+        <section className='container'>
+          <div className='row'>
+            <div className='col-lg-6 col-md-6 col-sm-12 col-12 my-3'>
+              <Sliders></Sliders>
+            </div>
+            <div className='col-lg-6 col-md-6 col-sm-12 col-12 align-self-center d-flex text-center'>
+              <div>
+                <h4 className='text_change fw-bold'>Introducing Apricore</h4>
+                <p style={{ color: "#797d7f" }}>Inspired by the season's colour - Apricot Crush, this collection is a summer delight made for you! Each piece in the collection adds a touch of playful warmth to your style. Embrace the spirit of summer with Miraggio's Apricore collection – where every bag gets you to the core of summer.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='pt-5 px-3'>
+          <div className='container-fluid'>
+            <div className='row'>
+              <div className='col-lg-6 col-md-6 col-sm-6 col-12 mb-3'>
+                <div style={{ width: "35%" }} className='menu_width'>
+                  <div className="input-group flex-nowrap">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="I'm looking for...."
+                      aria-label="Search"
+                      aria-describedby="addon-wrapping"
+                      value={searchQuery}
+                      onChange={handleSearchChange}
+                    />
+                    <span className="material-symbols-outlined input-group-text bg-light text-dark fw-bolder" id="addon-wrapping"><i className="ri-search-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div className='col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-end'>
+                <div style={{ width: "35%" }} className='menu_width'>
+                  <select
+                    className="form-select"
+                    onChange={(e) => setSortOption(e.target.value)}
+                  >
+                    <option value="default">Default</option>
+                    <option value="1">Alphabetically, A-Z</option>
+                    <option value="2">Alphabetically, Z-A</option>
+                    <option value="3">High Price</option>
+                    <option value="4">Low Price</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className='pb-4'>
+          <div className='container-fluid px-3'>
+            <div className='row px-3'>
+              {
+                sortedProducts.map((item) => (
+                  <div className='col-lg-3 col-md-6 col-sm-12 col-12 my-3' key={item.id}>
+                    <ProductCard
+                      Productsitem={item}
+                    />
+                  </div>
+                ))
+              }
+            </div>
+          </div>
         </section>
       </>
     </Helmet>
